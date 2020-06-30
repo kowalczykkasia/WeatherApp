@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sunny_gradient"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/thunder"
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/thunder_and_rain"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/backgroundStars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/stars"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/backgroundClouds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/clouds"
+            app:layout_constraintBottom_toTopOf="@+id/Rw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <ImageView
+            android:id="@+id/rain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/rain"
+            android:background="@drawable/rain"
+            app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_8" />
+
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_width="125dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="117dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/city_country_name"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:text="Warsaw, Poland"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_date" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:gravity="center"
+            android:text="11°"
+            android:textColor="@color/white"
+            android:textSize="112sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_country_name" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="368dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:justificationMode="none"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/backgroundImage"
+            app:layout_constraintTop_toBottomOf="@+id/temperature" />
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bookmark_border" />
+
+        <ImageView
+            android:id="@+id/bookmarked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_bookmarked" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/bookmark"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Rw"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintVertical_bias="0.038"
+            tools:listitem="@layout/daily_weather_detail" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RW_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundImage"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/item_saved_daily" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="800dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/grey"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/RW_hours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RW_hours"
+            app:layout_constraintTop_toTopOf="@id/recyclerViewWithInfo"
+            app:layout_constraintVertical_bias="0.973" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewWithInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RW_hours"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/daily_info" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.weatheracc.ui.main.Fragment.SplashFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_forecastListFragment"
+            app:destination="@id/forecastListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forecastListFragment"
+        android:name="com.example.weatheracc.ui.main.Fragment.ForecastListFragment"
+        android:label="forecast_list_fragment"
+        tools:layout="@layout/forecast_list_fragment" >
+        <action
+            android:id="@+id/action_forecastListFragment_to_citySearchFragment"
+            app:destination="@id/citySearchFragment"
+            app:popUpTo="@id/forecastListFragment" />
+        <action
+            android:id="@+id/action_forecastListFragment_to_detailScreen"
+            app:destination="@id/detailScreen"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/forecastListFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_forecastListFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/citySearchFragment"
+        android:name="com.example.weatheracc.ui.main.Fragment.CitySearchFragment"
+        android:label="city_search_fragment"
+        tools:layout="@layout/city_search_fragment" >
+        <action
+            android:id="@+id/action_citySearchFragment_to_forecastListFragment2"
+            app:destination="@id/forecastListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.example.weatheracc.ui.main.Fragment.DetailScreenFragment"
+        android:label="detail_screen_fragment"
+        tools:layout="@layout/detail_screen_fragment" >
+        <argument
+            android:name="cityCountryName"
+            app:argType="com.example.weatheracc.models.WeatherForecast" />
+        <action
+            android:id="@+id/action_detailScreen_to_citySearchFragment"
+            app:destination="@id/citySearchFragment"
+            app:popUpTo="@id/forecastListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.weatheracc.ui.main.Fragment.RegistrationFragment"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" />
+
+
+</navigation>

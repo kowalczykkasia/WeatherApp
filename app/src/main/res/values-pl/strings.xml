@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="landing_text">Cześć pogodo</string>
+
+    <string name="Sunrise">Wschód</string>
+    <string name="Sunset">Zachód</string>
+    <string name="Chance_of_rain">Szansa opadów deszczu</string>
+    <string name="Humidity">Wilgotność</string>
+    <string name="Wind">Wiatr</string>
+    <string name="Feels_like">"Odczuwalna temp</string>
+    <string name="pressure">Ciśnienie</string>
+    <string name="UV_Index">UV indeks</string>
+</resources>

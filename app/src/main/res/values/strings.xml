@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">WeatherAcc</string>
+    <string name="landing_text">Hello Weather</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="weather_app" translatable="false">WEATHER APP</string>
+    <string name="units_metric" translatable="false">°C / °F</string>
+    <string name="units_imperial" translatable="false">°C <b>/ °F</b></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="Sunrise">Sunrise</string>
+    <string name="Sunset">Sunset</string>
+    <string name="Chance_of_rain">Chance of rain</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Wind">Wind</string>
+    <string name="Feels_like">"Feels like</string>
+    <string name="pressure">pressure</string>
+    <string name="UV_Index">UV Index</string>
+
+</resources>
+
